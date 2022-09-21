@@ -1,0 +1,33 @@
+//Exercício 1 / Nome do programa: Array01.c
+//Objetivo: Preencher, para um veter de 5 posições,numero inteiros aleatorios
+// rand : randomico, 
+#include <stdio.h> 
+#include <stdlib.h> 
+#include <locale.h>
+#include <time.h>
+
+main () // emite execução do programa
+{
+	//Sintaxe para definir a execução um(a) array
+	//Tipo identificador[indice];
+	//Estática de memoria = tudo pra mim 
+
+	int i,numero [50]; 
+	
+	//preenchendo o vetor via código:
+	
+	//int numero [10] = {3,4,6,2,1,8,2,9,5}; // derfinindo algo com 50 posições, uma maneira de manipular o vetor 
+
+	// preenchendo o vetor via teclado:
+	//for(i = 0; i < 50 ; i++)
+		//scanf("%d") , & numero [i]);
+			
+		// preencher um vetor Alatoria
+		srand(time(0));
+		for (i=0; i < 50; i ++)
+		{
+		numero [i] = rand() % 50;
+		printf("\n");
+		printf("numero [%d] = %d" , i+1 , numero [i] );	
+		}
+}
