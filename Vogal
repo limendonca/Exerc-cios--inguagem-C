@@ -1,0 +1,21 @@
+include <stdio.h> //importar a biblioteca
+#include <locale.h>
+
+int main() 
+{
+	char letra; // definição de variavável 
+	
+	setlocale(LC_ALL, "Portuguese");
+	printf("\n Digite uma Letra..." );
+	// leia(letra)
+	scanf( "%c", &letra);
+	if (letra == 'A' || letra =='a'|| letra == 'E' || letra == 'e' || letra == 'I' || letra  == 'i' || letra  == 'O' || letra  == 'o' || letra  == 'U' || letra  == 'u' ){
+		printf ("\n letra %c é uma vogal", letra);
+			
+	}
+	else{
+		 printf ("\n %c Não é uma vogal");
+	}
+	
+
+}
