@@ -1,0 +1,17 @@
+//descobrir a quantidade de bytes de tipos de variáveis 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()	
+{
+	int v1=10; // inteiro 
+	short int v2=10; // inteiro longo curto
+	long int v3=10; //inteiro longo
+	
+	printf("\nUm INT        ocupa %d bytes", sizeof (v1));
+	printf("\nUm Shorty INT ocupa %d bytes", sizeof (v2));
+	printf("\nUm Long INT   ocupa %d bytes\n", sizeof (v3));
+	system("pause");
+}
+	  
