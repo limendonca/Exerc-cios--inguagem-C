@@ -1,0 +1,36 @@
+#include <stdio.h>  
+#include <stdlib.h> 
+#include <locale.h>
+
+
+int main()
+{
+	setlocale(LC_ALL, "Portuguese");
+	system ("cls");
+	
+	char nome [1200][55];
+	float salario [1200];
+	int idade [1200], i;
+	
+	for (i=0; i < 1200; i++)
+	{
+		fflush(stdin);
+		printf("\nDigite o %d salario:\t", i+1);
+		scanf("%f", salario[i]);
+		fflush(stdin);
+		printf("\nDigite o %d idade:\t", i+1);
+		scanf("%d", idade[i]);
+		fflush(stdin);
+		printf("\n");
+		printf("\nDigite o %d nome:\t");
+		gets(nome[i]);		
+	}
+	system ("cls");
+	for(i=0; i < 1200; i++)
+	{
+		printf("\nsalario: %f", salario[i]);
+		printf("\nidade: %d", idade[i]);
+		printf("\nnome: %s", nome[i]);
+	}
+}
+
