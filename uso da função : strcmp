@@ -1,0 +1,23 @@
+/* 4 - Escreva um programa para comparar duas strings.
+uso da função : strcmp
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+
+int main ()
+{ 
+	setlocale(LC_ALL , "Portuguese");
+	char a [40] = "Bonnie é linda ";
+	char b [40] = "Porém mija muito";
+	int compara;
+	
+	compara = strcmp(a,b);
+	
+	if (compara == 0)
+		printf("Iguais");
+	else 
+		printf("Não Iguais");
+}
