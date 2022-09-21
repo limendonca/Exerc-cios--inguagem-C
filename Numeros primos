@@ -1,0 +1,39 @@
+/* gerar os primeiros 1000 numeros primos, guardar um vetor chamado vetprimos a impressão devera mostrar 10 numeros por linha  - 10 numeros primos por linha 
+estrutura de repetição */
+#include <stdio.h> 
+#include <stdlib.h> 
+#include <locale.h>
+
+int main ()
+{	
+	system ("cls");
+	setlocale(LC_ALL,"PORTUGUESE");
+	int vetprimos [1000];
+	
+	int numero, numerodividido, divisao, quebralinha, i, quebra, a, b, c, x, d; // declrando variaveis 
+	
+	printf("Veja os números primos:\n\n");
+	
+	for(b=1;b<a;b++)
+             if(a%b==0)
+             x=x+1;
+         if(c==1){
+             printf("%i\n",a);      //Imprimindo os números primos
+             d++;
+                 }
+	
+	if 	(quebralinha > 10)
+	{ 
+		quebra = quebralinha + 1;
+		printf("\n");
+		quebralinha = 1;
+	}	
+	else(numerodividido==2);
+	{
+		printf("\t%d", vetprimos[i]);
+		quebralinha = quebralinha + 1;
+	}	
+	
+	system("PAUSE"); // pause no sistema, para o usuario ver os dados 
+	return 0;	
+}
