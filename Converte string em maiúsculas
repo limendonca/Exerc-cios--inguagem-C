@@ -1,0 +1,16 @@
+/* 2 - Escreva um programa para converter os caracteres minúsculos de uma string em maiusculas 
+uso da função: strupr (Converte string em maiúsculas)
+*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+
+int main()
+{
+	setlocale(LC_ALL , "Portuguese");
+	char a [40] = "Hello friends";
+	printf("Frase original: %s \n" ,a);
+	printf("Sua frase em maiúscula: %s \n" ,strupr(a));
+	
+}
