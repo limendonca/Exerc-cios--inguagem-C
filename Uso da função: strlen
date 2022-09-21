@@ -1,0 +1,15 @@
+/* 1 - Escreva uma programa para encontrar o comprimento de uma string 
+Uso da função: strlen
+*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+
+int main()
+{
+	char a [10] = "bonnie";
+	printf("Tamanho da string a = %d \n" ,strlen(a));
+	gets(a); // obter uma string (conjunto de char) via teclado
+	printf("Tamanho da string a = %d \n" ,strlen(a));
+}
