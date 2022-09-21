@@ -1,0 +1,17 @@
+/* 3 - Escreva um programa para anexar uma string a outra string
+uso da função strcat
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+
+int main ()
+{	
+	setlocale(LC_ALL , "Portuguese");
+	char a [40] = "Bonnie é linda ";
+	char b [40] = "Porém mija muito";
+	strcat(a,b);
+	printf("%s", a);
+}
