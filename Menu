@@ -1,0 +1,144 @@
+// elaboborar um menu de opções:
+#include <stdio.h> // comando de entrada e saida 
+#include <stdlib.h> //
+#include <locale.h> // biblioteca para pode utilizar acentuação
+
+void func_primitivas()
+{
+	system("cls");
+	printf("Opcao executada - Primitivas\n");
+	//getch(); // congela
+	system("pause"); 	
+}
+
+void func_array()
+{
+	system("cls");
+	printf("Opcao executada - Array\n");
+	//getch(); // congela
+	system("pause"); 	
+}
+
+void func_pilha()
+{
+	system("cls");
+	printf("Opcao executada - Pilha\n");
+	//getch(); // congela
+	system("pause"); 	
+}
+
+void func_lista()
+{
+	system("cls");
+	printf("Opcao executada - Lista\n");
+	//getch(); // congela
+	system("pause"); 	
+}
+
+void func_arvore()
+{
+	system("cls");
+	printf("Opcao executada - Árvore\n");
+	//getch(); // congela
+	system("pause"); 	
+}
+
+void func_grafo()
+{
+	system("cls");
+	printf("Opcao executada - Grafo\n");
+	//getch(); // congela
+	system("pause"); 	
+}
+
+func_opcao1()
+{
+	printf("\nPrimitivas 1");
+}
+
+func_opcao2()
+{
+	printf("\nArray 2");
+}
+
+func_opcao3()
+{
+	printf("\nPilhas 3");
+}
+
+func_opcao4()
+{
+	printf("\nLista 4");
+}
+
+func_opcao5()
+{
+	printf("\nÁrvore 5");
+}
+
+func_opcao6()
+{
+	printf("\nGrafo 6");
+}
+
+main()
+{
+	int opcao;
+	do
+	{
+		
+		do
+		{
+
+		system ("cls");
+		setlocale(LC_ALL,"PORTUGUESE");
+		
+		printf("MENU ESTRUTURA DE DADOS\n");
+		printf("1 - Primitivas \n");
+		printf("2 - Array\n");
+		printf("3 - Pilhas\n");
+		printf("4 - Lista\n");
+		printf("5 - Árvore\n");
+		printf("6 - Grafo\n");
+		printf("7 - Sair\n");
+		printf("Digite sua ecolha: ");
+		
+		scanf("%d", &opcao);
+		
+		printf("\nOpção selecionada: %d", opcao);
+	}	while(opcao < 1 || opcao > 7);
+		switch (opcao)
+			{
+				case 1:
+					func_opcao1();
+					break;
+				case 2:
+					func_opcao2();
+					break;
+				case 3:
+					func_opcao3();
+					break;
+				case 4:
+					func_opcao4();
+					break;
+				case 5:
+					func_opcao5();
+					break;
+				case 6:
+					func_opcao6();
+					break;
+				case 7:	
+					exit(0);
+					default:
+					printf("\n\n Opção INVALIDA!");	
+					system("Pause");			
+			}
+			if (opcao==1) func_primitivas();
+			if (opcao==2) func_array();
+			if (opcao==3) func_pilha();
+			if (opcao==4) func_lista();
+			if (opcao==5) func_arvore();
+			if (opcao==6) func_grafo();
+			if (opcao==7) exit(1);
+			} while(opcao!=7);	
+}
